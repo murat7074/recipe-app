@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+.meals-container {
+  background-color: #fff;
+  box-shadow: 0 0 10px 2px #3333331a;
+  border-radius: 3px;
+  overflow: hidden;
+  width: 99vw;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+header input {
+  background-color: #eee;
+  border: none;
+  border-radius: 3px;
+  font-family: inherit;
+  padding: 0.5rem 1rem;
+}
+
+header button {
+  background-color: transparent;
+  border: none;
+  color: rgb(138, 129, 141);
+  font-size: 1.5rem;
+  margin-left: 10px;
+}
+
+.fav-container {
+  background-color: rgb(243, 225, 255);
+  padding: 0.25rem 1rem;
+  text-align: center;
+  height: auto;
+  width: 99vw;
+}
+
+.fav-meals {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+.fav-meals li {
+  cursor: pointer;
+  position: relative;
+  margin-right: 50px;
+  margin-left: 50px;
+  width: 75px;
+}
+
+.fav-meals li .clear {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  opacity: 0;
+  position: absolute;
+  top: -0.5rem;
+  right: -0.5rem;
+  font-size: 1.2rem;
+}
+
+.fav-meals li:hover .clear {
+  opacity: 1;
+}
+
+.fav-meals li img {
+  border: 2px solid #ffffff;
+  border-radius: 30%;
+  box-shadow: 0 0 10px 2px #3333331a;
+  /* object-fit: cover; */
+  height: 100px;
+  width: 200px;
+  max-width: 100%;
+}
+
+.fav-meals li span {
+  display: inline-block;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 140px;
+  text-align: start;
+}
+
+.meals {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.meal {
+  border-radius: 3px;
+  box-shadow: 0 0 10px 2px #3333331a;
+  cursor: pointer;
+  margin: 1rem;
+  margin-left: 2.4rem;
+  margin-right: 2.4rem;
+  overflow: hidden;
+  width: 300px;
+  height: 300px;
+}
+
+.meal-header {
+  position: relative;
+}
+
+.meal-header img {
+  object-fit: cover;
+  height: 250px;
+  width: 299px;
+}
+
+.meal-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.meal-body h4 {
+  margin: 0;
+}
+
+.meal-body .fav-btn {
+  border: none;
+  background-color: transparent;
+  color: rgb(197, 188, 188);
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: rgb(172, 46, 46);
+}
+
+.meal-body .fav-btn:hover {
+  color: red;
+  transform: scale(1.2);
+}
+
+.popup-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.popup-container.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.popup {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 0 2rem;
+  position: relative;
+  overflow: auto;
+  max-height: 100vh;
+  max-width: 600px;
+  width: 100%;
+}
+
+.popup .close-popup {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.meal-info h1 {
+  text-align: center;
+}
+
+#search {
+  cursor: pointer;
+}
+
+h3 {
+  text-align: center;
+}
+
+.fav-meals li .info {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  opacity: 0;
+  position: absolute;
+  top: -7%;
+  left: 0;
+  font-size: 1.2rem;
+}
+
+.fav-meals li:hover .info {
+  opacity: 1;
+}
